@@ -1,0 +1,49 @@
+<html>
+    <head>
+        </style>
+        <script>
+            function fun1()
+            {
+                document.getElementById('i1').style.visibility='visible';
+                document.getElementById('i2').style.visibility='hidden';
+            }
+            function fun2()
+            {
+                var s=document.getElementById('i1');
+                s.style.visibility='hidden';
+                var s1=document.getElementById('i2');
+                s1.style.visibility='visible';
+            }
+            function fun3()
+            {
+                if(document.getElementById('i1').style.visibility=='visible')
+                {
+                    document.getElementById('i1').style.visibility='hidden';
+                    document.getElementById('i2').style.visibility='visible';
+                }
+                if(document.getElementById('i2').style.visibility=='visible')
+                {
+                    document.getElementById('i2').style.visibility='hidden';
+                    document.getElementById('i1').style.visibility='visible';
+                }
+
+            }
+        </script>
+    </head>
+    <body>
+       
+        <img id="i1" width="200px" height="250px" src="im1.png" style="visibility: visible";>
+        <img id="i2" width="200px" height="250px" src="im2.png" style="visibility: hidden";>
+        <br><br><br>
+        <button onclick="fun1()" width="100px" height="100">
+            Button1
+        </button>
+        <button onclick="fun2()" width="100px" height="100px">
+            Button2
+        </button>
+        <button onclick="fun3()" width="100px" height="100px">
+            Button3
+        </button>
+
+    </body>
+</html>
